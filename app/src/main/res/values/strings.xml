@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Scanner</string>
+
+    <string name="debug">Debug</string>
+    <string name="message_building">Building name</string>
+    <string name="message_floor">Floor</string>
+    <string name="button_start">Start</string>
+    <string name="title_activity_display_message">Collecting Fingerprint</string>
+</resources>

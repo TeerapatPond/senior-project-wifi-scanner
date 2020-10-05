@@ -1,0 +1,266 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+    <EditText
+        android:id="@+id/message_building"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rect_edit_text"
+        android:hint="@string/message_building"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="40dp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/message_floor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rect_edit_text"
+        android:hint="@string/message_floor"
+        android:inputType="number"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="40dp"
+        android:visibility="gone" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rect_button"
+        android:onClick="startButton"
+        android:padding="20dp"
+        android:text="@string/button_start"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="50dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/rounded_shape"
+        android:gravity="center_vertical"
+        android:onClick="startButton"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fingerprint" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Fingerprinting"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Collect Wi-Fi signal fingerprint"
+                android:textColor="#BDBDBD"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#CDDC39"
+        android:onClick="wifiInfo"
+        android:text="Wi-Fi Info"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/rounded_shape"
+        android:gravity="center_vertical"
+        android:onClick="wifiInfo"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wifi" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Wi-Fi information"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Connected access point information"
+                android:textColor="#BDBDBD"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#673AB7"
+        android:onClick="signalMeasurement"
+        android:text="Signal Measurement"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/rounded_shape"
+        android:gravity="center_vertical"
+        android:onClick="signalMeasurement"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/signal" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Surround signaling"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Sense surround Wi-Fi signal"
+                android:textColor="#BDBDBD"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="localization"
+        android:text="LOCALIZATION"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/rounded_shape"
+        android:gravity="center_vertical"
+        android:onClick="localization"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/map_marker" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Localization"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Get current location"
+                android:textColor="#BDBDBD"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

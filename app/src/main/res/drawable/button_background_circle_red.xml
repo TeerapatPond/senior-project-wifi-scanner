@@ -1,0 +1,50 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+                    <gradient android:endColor="#FFFFFF" android:gradientRadius="50%p" android:startColor="#000000" android:type="radial" />
+                </shape>
+            </item>
+            <item android:bottom="3dp" android:left="3dp" android:right="3dp" android:top="3dp">
+                <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+                    <solid android:color="#d32f2f" />
+                    <size android:width="33dp" android:height="33dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_focused="true">
+        <layer-list>
+            <item>
+                <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+                    <gradient android:endColor="#FFFFFF" android:gradientRadius="50%p" android:startColor="#000000" android:type="radial" />
+                </shape>
+            </item>
+            <item android:bottom="3dp" android:left="3dp" android:right="3dp" android:top="3dp">
+                <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+                    <solid android:color="#f44336" />
+                    <size android:width="33dp" android:height="33dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <item>
+        <layer-list>
+            <item>
+                <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+                    <gradient android:endColor="#FFFFFF" android:gradientRadius="50%p" android:startColor="#000000" android:type="radial" />
+                </shape>
+            </item>
+            <item android:bottom="3dp" android:left="3dp" android:right="3dp" android:top="3dp">
+                <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+                    <solid android:color="#f44336" />
+                    <size android:width="33dp" android:height="33dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

@@ -1,0 +1,11 @@
+<!-- drawable/signal.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="60dp"
+    android:width="60dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <path android:fillColor="#f44336" android:pathData="M12,2c5.5,0,10,4.5,10,10s-4.5,10-10,10S2,17.5,2,12S6.5,2,12,2z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M5.3,18.1h2.1V16H5.3 M8.8,18.1h2.1v-4.9H8.8 M12.3,18.1h2.1V9.6h-2.1 M15.9,18.1H18V5.4h-2.1V18.1z"/>
+
+</vector>

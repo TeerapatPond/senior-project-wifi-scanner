@@ -1,0 +1,249 @@
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:gravity="center_horizontal"--><!--android:orientation="vertical"--><!--tools:context=".MainActivityFragment"--><!--tools:showIn="@layout/activity_main">-->
+
+<!--<EditText--><!--android:id="@+id/message_building"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginTop="20dp"--><!--android:background="@drawable/rect_edit_text"--><!--android:hint="@string/message_building"--><!--android:padding="10dp"--><!--android:singleLine="true"--><!--android:textAlignment="center"--><!--android:textColor="@android:color/black"--><!--android:textSize="40dp" />-->
+
+<!--<EditText--><!--android:id="@+id/message_floor"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginTop="20dp"--><!--android:background="@drawable/rect_edit_text"--><!--android:hint="@string/message_floor"--><!--android:inputType="number"--><!--android:padding="10dp"--><!--android:singleLine="true"--><!--android:textAlignment="center"--><!--android:textColor="@android:color/black"--><!--android:textSize="40dp" />-->
+
+<!--<Button--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="2dp"--><!--android:layout_marginRight="2dp"--><!--android:layout_marginTop="20dp"--><!--android:background="@drawable/button_collect_fingerprint"--><!--android:onClick="collectFingerprintButton"--><!--android:padding="20dp"--><!--android:text="Fingerprint"--><!--android:textAlignment="center"--><!--android:textColor="@android:color/white"--><!--android:textSize="50dp" />-->
+
+<!--<Button--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="2dp"--><!--android:layout_marginRight="2dp"--><!--android:layout_marginTop="20dp"--><!--android:background="@drawable/button_collect_scanning"--><!--android:onClick="collectScanningButton"--><!--android:padding="20dp"--><!--android:text="Scanning"--><!--android:textAlignment="center"--><!--android:textColor="@android:color/white"--><!--android:textSize="50dp" />-->
+
+
+<!--</LinearLayout>-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/id" />
+
+        <EditText
+            android:id="@+id/edittextBuidingID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="6dp"
+            android:backgroundTint="#9E9E9E"
+            android:hint="Building ID"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/name" />
+
+        <EditText
+            android:id="@+id/edittextBuildingName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="6dp"
+            android:backgroundTint="#9E9E9E"
+            android:hint="Building name"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/floor" />
+
+        <EditText
+            android:id="@+id/edittextFloor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="6dp"
+            android:backgroundTint="#9E9E9E"
+            android:hint="Floor"
+            android:inputType="number"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/round" />
+
+        <EditText
+            android:id="@+id/edittextRound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="6dp"
+            android:backgroundTint="#9E9E9E"
+            android:hint="Round"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/file" />
+
+        <EditText
+            android:id="@+id/edittextFileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="6dp"
+            android:backgroundTint="#9E9E9E"
+            android:hint="File name"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/refresh" />
+
+        <EditText
+            android:id="@+id/edittextMultipleScan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="6dp"
+            android:backgroundTint="#9E9E9E"
+            android:hint="Scanning per press"
+            android:inputType="number"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="right"-->
+    <!--android:layout_marginRight="12dp"-->
+    <!--android:layout_marginTop="6dp"-->
+    <!--android:gravity="center_horizontal">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginRight="12dp"-->
+    <!--android:background="@drawable/rounded_shape"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:onClick="buttonFingerprint"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:padding="6dp">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/fingerprint_grey" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginLeft="12dp"-->
+    <!--android:background="@drawable/rounded_shape"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:onClick="buttonLocation"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:padding="6dp">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/location" />-->
+
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_shape_red"
+        android:gravity="center_vertical"
+        android:onClick="buttonStart"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="START"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
